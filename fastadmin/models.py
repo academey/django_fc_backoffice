@@ -15,6 +15,11 @@ class Departments(models.Model):
     class Meta:
         managed = False
         db_table = 'departments'
+        verbose_name = '부서'
+        verbose_name_plural = '부서들'
+
+    def __str__(self):
+        return f'ID: {self.dept_no}, Name: {self.dept_name}'
 
 
 class DeptEmp(models.Model):

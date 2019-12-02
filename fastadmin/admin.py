@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Employees
+from .models import Employees, Departments
 from rangefilter.filter import DateRangeFilter, DateTimeRangeFilter
 
 
@@ -12,3 +12,4 @@ class DisplayEmployee(admin.ModelAdmin):
 
 
 admin.site.register(Employees, DisplayEmployee)
+admin.site.register(Departments)
