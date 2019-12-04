@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Employees, Departments
+from .models import Employees, Departments, Cat
 from rangefilter.filter import DateRangeFilter, DateTimeRangeFilter
+from django.utils.safestring import mark_safe
 
 
 class DisplayEmployee(admin.ModelAdmin):
@@ -18,6 +19,14 @@ class DisplayEmployee(admin.ModelAdmin):
         return False
 
 
+class DisplayCat(admin.ModelAdmin):
+    fields = ('name', 'age', 'photo')
+    list_display = ('name', 'age', 'photo', 'get_image')
+
+    def get_image(self, obj):
+        return mark_safe(f'<img src={obj.photo.url} width={obj.photo.width} height={obj.photo.height} />')
+
 
 admin.site.register(Employees, DisplayEmployee)
+admin.site.register(Cat, DisplayCat)
 admin.site.register(Departments)

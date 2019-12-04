@@ -86,3 +86,12 @@ class Titles(models.Model):
         managed = False
         db_table = 'titles'
         unique_together = (('emp_no', 'title', 'from_date'),)
+
+
+class Cat(models.Model):
+    name = models.CharField(max_length=30)
+    age = models.IntegerField()
+    photo = models.ImageField(null=True, blank=True, upload_to='cats_photo/')
+
+    def __str__(self):
+        return f"Name: {self.name}"

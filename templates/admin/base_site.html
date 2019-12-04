@@ -1,14 +1,14 @@
 {%  extends 'admin/base.html' %}
 {%  load static %}
-
+sdsdssdddsdsdsds
 {%  block title %} | {{  site_title|default:_('Django site admin')  }} {% endblock %}
 
 {%  block branding %}
 <h1>
-    <a href ="{%  url 'admin:index' %}">
-       <img src="{%  static 'images/fastadmin-logo.png' %}" height="50px" />
+    <a href ="{% url 'admin:index' %}">
+       <img src="{% static 'images/fastadmin-logo.jpeg' %}" height="50px" />
     </a>
 </h1>
 {%  endblock %}
-
+<br/>
 {%  block nav-global %} {% endblock %}
