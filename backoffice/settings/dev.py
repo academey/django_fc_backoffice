@@ -2,7 +2,7 @@ from .base import *
 
 DEBUG = True
 ENVIRONMENT_NAME = 'DEV Server'
-ENVIRONMENT_COLOR = 'FF2222'
+ENVIRONMENT_COLOR = '#FF2222'
 
 # export DJANGO_SETTINGS_MODULE=backoffice.settings.dev
 # python manage.py runserver
