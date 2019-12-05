@@ -7,12 +7,12 @@ verify_ssl = true
 
 [packages]
 "django" = "==2.2.2"
-
 mysqlclient = "*"
 django-admin-rangefilter = "*"
 pillow = "*"
 django-adminactions = "*"
 urllib3 = "*"
+django-admin-env-notice = "*"
 
 [requires]
 python_version = "3.6"

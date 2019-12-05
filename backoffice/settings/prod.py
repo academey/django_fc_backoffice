@@ -1,0 +1,8 @@
+from .base import *
+
+DEBUG = False
+
+ENVIRONMENT_NAME = 'PROD Server'
+ENVIRONMENT_COLOR = '#2e4bdb'
+
+# ENVIRONMENT_ADMIN_SELECTOR=
