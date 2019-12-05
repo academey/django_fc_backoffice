@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 INSTALLED_APPS += [
     'fastadmin',
     'rangefilter',
+    'admin_honeypot'
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -13,6 +13,7 @@ pillow = "*"
 django-adminactions = "*"
 urllib3 = "*"
 django-admin-env-notice = "*"
+django-admin-honeypot = "*"
 
 [requires]
 python_version = "3.6"
