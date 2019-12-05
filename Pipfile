@@ -6,10 +6,13 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "*"
+"django" = "==2.2.2"
+
 mysqlclient = "*"
 django-admin-rangefilter = "*"
 pillow = "*"
+django-adminactions = "*"
+urllib3 = "*"
 
 [requires]
 python_version = "3.6"
